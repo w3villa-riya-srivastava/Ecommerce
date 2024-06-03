@@ -2,34 +2,48 @@
     font-family: "Roboto", sans-serif;
     margin:0px;
     padding:0px;
-    background-color: #f1f1ff;
     color: black;
     ul{
         list-style: none;
     }
-    ul li{
-        text-decoration-style: none;
-        color:rgb(59, 55, 55);
-    }
-    
 }
-.div-setbetween ul li a i{
-    padding:5px;
-}
-
-/* Top-Head */
 .wrapper{
     max-width: 1398px;
     margin: auto;
     display: flex;
+    justify-content: space-between;
+}
+:root{
+    --bg-primary: rgb(38, 81, 214);
+    --bg-secondary: rgb(253, 211, 47);
+    --bg-navigator: rgb(240,240,240);
+}
+.bg-secondary{
+    background-color: var(--bg-secondary);
+}
+.bg-primary{
+
+    background-color: var(--bg-primary);
+}
+
+.icon-gap{
+    /* .div-setbetween ul li i */
+    padding:5px;
+
+} */
+
+
+/* Top-Head */
+.top-head{
+    background-color: var(--bg-navigator);
 }
 .div-setbetween{
-    width: 466px;
-    padding: 12px;
+    padding: 12px 0px;
+    display: flex;
 }
 .div-setbetween ul{
    text-align: center;
-   color: black;
+   /* color: black; */
 }
 .div-setbetween ul li{
    display: inline-block;
@@ -40,3 +54,34 @@
     cursor: pointer;
     color: blue;
  }
+
+ /* Mid-Head */
+
+ .mid-head{
+    background-color: var(--bg-navigator);
+}
+.mid-head .div-setbetween h1{
+    font-weight: bold;
+    font-size: 35px;
+}
+.wrapper .search-bar{
+    border:1px solid lightblue;
+    margin: 0px;
+    /* padding: 0px; */
+}
+/* .search-bar.in-button{
+    back
+} */
+
+ .bottom-head{
+    background-color: var(--bg-primary);
+ }
+
+.div-setbetween .menu-items ul li{
+    color: white;
+
+}
+.div-setbetween .menu-items{
+    color: white;
+
+}
