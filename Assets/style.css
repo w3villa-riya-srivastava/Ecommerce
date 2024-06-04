@@ -17,8 +17,8 @@
     --bg-navigator: rgb(240,240,240);
 }
 .bg-primary{
-    margin-left: 2px;
     background-color: var(--bg-primary);
+    border: none;
     
 }
 
