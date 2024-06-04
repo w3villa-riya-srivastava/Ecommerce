@@ -19,20 +19,20 @@
 .bg-primary{
     background-color: var(--bg-primary);
     border: none;
-    
 }
-
 .icon-gap{
     /* .div-setbetween ul li i */
     padding:5px;
 
-} */
+} 
+.div-setbetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 /* Top-Head */
-.top-head{
-    background-color: var(--bg-navigator);
-}
 
 .alltopHead{
         display: flex;
@@ -157,4 +157,110 @@ color: blue;
     display: flex;
     align-items: center;
     padding: 0px 10px;
+}
+
+/* Hero Section  */
+.carousel-part{
+height: calc(100vh - 329px);
+   padding: 30px;
+   display: flex;
+   gap: 30px;
+}
+.left-carousel{
+    width: 65%;
+    border: 2px solid black;
+    border-radius: 5%;
+    
+}
+.right{
+    width:35%;
+    /* margin:5px; */
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    
+}
+.right-up{
+    height: 50%;
+    border-radius: 5%;
+    border: 1px solid black;
+    object-fit: cover;
+
+}
+.right-bottom{
+    height: 50%;
+    border-radius: 5%;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+/* DIVIDER */
+
+.divider{
+    background-color: darkgray;
+    height: 160px;
+}
+
+/* THIRD PAGE */
+.third-page{
+padding:30px;
+height: 100vh;
+}
+.third-page h1{
+    margin: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+.third-page hr{
+ border: 1px solid red; 
+ width: 80px;
+ margin: auto;
+}
+.third-page p{
+    text-align: center;
+    color: rgb(88, 86, 86);
+    font-size: larger;
+    margin: 30px 0px 80px 0px;
+}
+.third-page p a{
+    color: blue;
+    cursor: pointer;
+}
+
+
+.third-page .items{
+    display: flex;
+    font-size: larger;
+    /* HORIZONTAL ALIGNMENT */
+    justify-content: center;
+    font-weight: bold;
+    
+}
+.third-page .items .categories-items{
+    padding: 12px;
+    color: #827d7d;
+    margin: 0px;
+    border: 1px solid #8080803b;
+    background-color: var(--bg-navigator);
+}
+.third-page .items .bg-primary{
+    color: white;
+    background-color: var(--bg-primary);
+} 
+
+/* SLICK-ITEMS */
+
+.third-page .slick{
+    display: flex;
+
+}
+.third-page .slick .slick-items{
+    display: flex;
+    justify-content: space-around;
+ 
+    height: 200px;
+    width: 20%;
+}
+.third-page .slick .slick-items .one{
+    border: 2px solid black;
 }
