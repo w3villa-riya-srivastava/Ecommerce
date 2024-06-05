@@ -20,6 +20,9 @@
     background-color: var(--bg-primary);
     border: none;
 }
+.bg-navigator{
+    background-color: var(--bg-navigator);
+}
 .icon-gap{
     /* .div-setbetween ul li i */
     padding:5px;
@@ -162,7 +165,7 @@ color: blue;
 /* Hero Section  */
 .carousel-part{
 height: calc(100vh - 329px);
-   padding: 30px;
+   padding: 30px 0px;
    display: flex;
    gap: 30px;
 }
@@ -202,12 +205,9 @@ height: calc(100vh - 329px);
 }
 
 /* THIRD PAGE */
-.third-page{
-padding:30px;
-height: 100vh;
-}
+
 .third-page h1{
-    margin: 20px;
+    padding: 30px;
     font-size: 50px;
     text-align: center;
 }
@@ -228,7 +228,7 @@ height: 100vh;
 }
 
 
-.third-page .items{
+.items{
     display: flex;
     font-size: larger;
     /* HORIZONTAL ALIGNMENT */
@@ -236,14 +236,14 @@ height: 100vh;
     font-weight: bold;
     
 }
-.third-page .items .categories-items{
+.items .categories-items{
     padding: 12px;
     color: #827d7d;
     margin: 0px;
     border: 1px solid #8080803b;
     background-color: var(--bg-navigator);
 }
-.third-page .items .bg-primary{
+.items .bg-primary{
     color: white;
     background-color: var(--bg-primary);
 } 
@@ -252,15 +252,132 @@ height: 100vh;
 
 .third-page .slick{
     display: flex;
+    width: auto;
+    margin:60px 0px;
 
 }
 .third-page .slick .slick-items{
     display: flex;
-    justify-content: space-around;
- 
-    height: 200px;
-    width: 20%;
+    /* justify-content: space-around; */
+    gap:10px;
+    /* height: 368px; */
+    width:100%;
+
 }
 .third-page .slick .slick-items .one{
     border: 2px solid black;
+    width: 250px;
+    flex-grow:1;
 }
+
+/* Fourth Page  */
+    .fourth-page h1{
+        padding: 30px;
+        font-size: 50px;
+        text-align: center;
+    }
+    .fourth-page hr{
+     border: 1px solid red; 
+     width: 80px;
+     margin: auto;
+    }
+    .fourth-page p{
+        text-align: center;
+        color: rgb(88, 86, 86);
+        font-size: larger;
+        margin: 30px 0px 80px 0px;
+    }
+
+    /* slick-items  */
+
+    .fourth-page .slick{
+        display: flex;
+        width: auto;
+        margin:60px 0px;
+    
+    }
+    .fourth-page .slick .slick-items{
+        display: flex;
+        /* justify-content: space-around; */
+        gap:10px;
+        /* height: 368px; */
+        width:100%;
+    
+    }
+    .fourth-page .slick .slick-items .one{
+        border: 2px solid black;
+        width: 250px;
+        flex-grow:1;
+    }
+    .fourth-page .slick .slick-items .one .second-div{
+        border: 2px solid black;
+        width: 250px;
+        flex-grow:1;
+    }
+    .see-products{
+        text-align: center;
+    }
+    .see-products .in-button{
+        font-size: larger;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        i{
+            color: white;
+        }
+    }
+
+    /* Fifth Page  */
+    .fifth-page h1{
+        padding: 30px;
+        font-size: 50px;
+        text-align: center;
+    }
+    .fifth-page hr{
+     border: 1px solid red; 
+     width: 80px;
+     margin: auto;
+    }
+    .fifth-page p{
+        text-align: center;
+        color: rgb(88, 86, 86);
+        font-size: larger;
+        margin: 30px 0px 80px 0px;
+    }
+
+    /* SLICK-ITEMS  */
+    
+    .fifth-page .slick{
+        display: flex;
+        width: auto;
+        /* margin:60px 0px; */
+    
+    }
+    .fifth-page .slick .slick-items{
+        display: flex;
+        /* justify-content: space-around; */
+        gap:10px;
+        /* height: 368px; */
+        width:100%;
+    
+    }
+    .fifth-page .slick .slick-items .one{
+        border: 2px solid black;
+        width: 250px;
+        flex-grow:1;
+    }
+
+    /* Sixth Page  */
+
+    .sixth-page h1{
+        padding: 30px;
+        font-size: 50px;
+        text-align: center;
+    }
+    .sixth-page hr{
+     border: 1px solid red; 
+     width: 80px;
+     margin: auto;
+    }
+
+    Seventh Page 
