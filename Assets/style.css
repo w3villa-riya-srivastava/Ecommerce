@@ -43,7 +43,7 @@
     text-align: center;
 }
 .ecom-heading hr{
- border: 1px solid #f05f1f;; 
+ border: 1px solid #f05f1f;
  width: 80px;
  margin: auto;
 }
@@ -374,13 +374,13 @@ height: calc(100vh - 329px);
 .divider-3{
     padding:20px 0px;
 }
-.divider-3 h5{
+.divider-3 .ecom-heading-1 h4{
     color: white;
 
 }
 .divider-3 hr{
  border: 1px solid #f05f1f;; 
- width: 112px;
+ width: 128px;
 }
 .slick .slick-items{
  margin: 0px;
@@ -404,7 +404,8 @@ height: calc(100vh - 329px);
 .circle-buttons ul{
     display:flex;
     justify-content: center;
-    gap:20px;
+    gap: 16px;
+    padding: 20px 0px;
 }
 .circle-buttons ul li i{
     font-size: 30px;
@@ -415,3 +416,82 @@ height: calc(100vh - 329px);
     background-color: var(--bg-primary);
 }
 /* Footer-Head Page */
+.footer-head{
+    display: flex;
+}
+.footer-head .about-us{
+    text-align: left;
+    width:25%;
+}
+.footer-head .about-us h3{
+   padding:20px;
+    
+}
+.footer-head .about-us hr{
+    border: 1px solid #f05f1f;
+    width: 60px;
+    margin-left: 20px;
+}
+.footer-head .about-us ul{
+    padding:10px;
+    text-align: left;
+    padding-left: 20px;
+}
+.footer-head .about-us ul li{
+    font-size: large;
+    padding:8px 0px;
+}
+.footer-head .about-us ul li a{
+   color: blue;
+   text-decoration: none;
+}
+.footer-head .about-us ul li a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* Newsletter */
+.about-us .stay{
+    padding-left: 20px;
+    margin: 10px 0px;
+    font-size: small;
+}
+.about-us .stay a{
+    color: blue;
+}
+.about-us .your-email{
+    display: flex;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.about-us.your-email .type .input{
+    padding:0px;
+}
+.about-us .your-email button{
+    background-color: rgb(28, 63, 161);
+    color: white;
+    border: none;
+    padding:2px;
+}
+
+/* Footer-Bottom  */
+.footer-bottom{
+    display: flex;
+}
+.footer-bottom .copyright{
+     width: 50%;
+    text-align: left;
+    font-size: larger;
+    color: rgb(192 192 192);
+    padding: 22px 0px;
+}
+.footer-bottom .payment{
+    width: 50%;    
+}
+.footer-bottom .payment .pay-images{
+ margin: 18px;
+justify-content: right;
+    height: 28px;
+    display: flex;
+}
