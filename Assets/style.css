@@ -401,11 +401,17 @@ height: calc(100vh - 329px);
 
 /* --Tenth Page: Buttons  */
 
-.circle-buttons{
-    /* background-color: blue; */
-    border: 1px solid transparent blue;
+.circle-buttons ul{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+.circle-buttons ul li i{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 12px;
     border-radius: 50%;
+    background-color: var(--bg-primary);
 }
-.circle-buttons ul li button{
-background-color: blue;
-}
+/* Footer-Head Page */
