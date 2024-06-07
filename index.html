@@ -10,9 +10,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- Styling Slick CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery CDN FOR SLICK  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -132,13 +137,15 @@
         <div class="wrapper">
             <div class="carousel-part">
                 <div class="left-carousel">
+                    
+                    <img src="./images/phone.png" alt="">
                 </div>
                 <div class="right">
                     <div class="right-up">
-                        <img src="./images/pic2.png" alt="">
+                        <img src="./images/watch.png" alt="">
                     </div>
                     <div class="right-bottom">
-                        <img src="./images/right.png" alt="">
+                        <img src="./images/watch.png" alt="">
                     </div>
                 </div>
             </div>
@@ -183,7 +190,7 @@
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, unde non? Assumenda similique
                         exercitationem doloremque, quas unde commodi recusandae obcaecati officiis accusantium! <a
-                            href="">Learn More.</a></p>
+                            href="">Learn More -></a></p>
                 </div>
 
                 <div class="items">
@@ -194,11 +201,12 @@
                 </div>
 
                 <div class="slick">
-                    <div class="slick-items">
+                    <div class="slick-items slider">
                         <div class="one"><img src="./images/fashion.jpeg" alt=""></div>
                         <div class="one"><img src="./images/homedecor.jpeg" alt=""></div>
                         <div class="one"><img src="./images/footwear.jpeg" alt=""></div>
                         <div class="one"><img src="./images/bags.jpeg" alt=""></div>
+                        <div class="one"><img src="./images/beauty.jpeg" alt=""></div>
                         <div class="one"><img src="./images/beauty.jpeg" alt=""></div>
                     </div>
                 </div>
@@ -224,9 +232,9 @@
                 </div>
 
                 <div class="slick">
-                    <div class="slick-items">
+                    <div class="slick-items slider">
                         <div class="one"><img src="./images/fashion.jpeg" alt="">
-                            <div class="second-div">2</div>
+                            <div class="second-div">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis maiores cum provident, debitis cupiditate itaque laborum officiis nam, exercitationem, omnis est. Eius aspernatur ab obcaecati esse voluptate fuga error? Nobis nulla beatae commodi eos aliquid ipsum unde! Inventore, sint! Quo recusandae nam incidunt enim inventore magni, repudiandae commodi quod natus.</div>
                         </div>
                         <div class="one"><img src="./images/homedecor.jpeg" alt="">
                             <div class="second-div">2</div>
@@ -320,7 +328,7 @@
     </section>
 
     <!-- Eight Page  -->
-    <section style="background-color: var(bg-navigator);">
+    <section style="background-color: lightcyan;">
         <div class="wrapper">
             <div class="eight-page">
                 <div class="ecom-heading">
@@ -575,5 +583,7 @@
         </div>
     </div>
 </section>
+<!-- SLICK SLIDER JS  -->
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
