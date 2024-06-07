@@ -239,10 +239,31 @@ height: calc(100vh - 329px);
 /* DIVIDER */
 
 .divider-1{
-    background-color: rgb(105, 105, 105);
-    /* height: 160px; */
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 66px;
 }
+.divider-1 .d1-items{
+    display: flex;
+    gap:20px;
+}
+.divider-1 .d1-items .d1-logo i{
+    font-size: 40px;
+    color: var(--use-orange);
+    border: 2px solid rgb(42, 42, 228);
+    border-radius: 50%;
+    padding: 14px;
+}
+.divider-1 .d1-items .d1-text{
+    margin-top: 10px;
 
+}
+.divider-1 .d1-items .d1-text p b{
+    font-size: larger;
+    color: white;
+
+}
 /* THIRD PAGE */
 
 .items{
