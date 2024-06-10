@@ -79,9 +79,9 @@
     height: 270px;
 }
 .slick .slick-items .one img{
-   object-fit: cover;
    width: 100%;
     height: 100%;
+    border-radius: 5%;
  
 }
 /* Slider CSS CHanges*/
@@ -89,20 +89,6 @@
 .slick-slide {
     padding-right: 24px;
 }
-/* .slick-dots li button::before {
-   
-    color: rgb(255 128 2);
-
-}
-.slick-next:before, .slick-prev:before {
-    font-family: slick;
-    font-size: 20px;
-    line-height: 1;
-    opacity: .75;
-    color: red;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-} */
 
 /* Top-Head */
 
@@ -246,7 +232,7 @@ height: calc(100vh - 329px);
    float: right;
    width: 100%;
    height: 100%;
-   object-fit: contain;
+
 }
 .right{
     width:35%;
@@ -320,6 +306,69 @@ height: calc(100vh - 329px);
     color: white;
     background-color: var(--bg-primary);
 } 
+/* Third Page Carousel */
+.slick .fashion-slick{
+    display: flex;
+    gap:10px;
+    width:100%;
+    height: 420px;
+}
+.fashion-left{
+    height: 100%;
+    width: 20%;
+    background-color: var(--bg-navigator);
+    .fashion-image{
+        margin: 20px;
+    }
+}
+.f-heading{
+    padding: 10px 10px 0px 10px;
+    hr{
+        margin: 10px 0px;
+        border: 1px solid #f05f1f;
+    width: 80px;
+    /* margin: auto; */
+}
+    }
+.fashion-image img{
+        height: 100%;
+        width: 100%;
+}
+.fashion-left ul{
+    padding: 0px 10px;
+    li{
+        color: blue;
+
+    }
+}
+.fashion-items{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    gap:10px;
+}
+.one-3{
+    /* height: 260px;
+    width: 100%; */
+    padding:10px;
+    margin:10px;
+}
+.one-3 .img{
+    padding:10px;
+    height:270px;
+    img{
+        height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }
+}
+.one-3 h3{
+    padding:10px;
+}
+.one-3 p{
+    padding: 0px 10px;
+}
+
 
 /* Fourth Page  */
 
@@ -353,12 +402,14 @@ height: calc(100vh - 329px);
         padding: 20px 0px;
     }
     }
-    .slick-container .p-price .cart{
+    /* .slick-container .p-price .cart{ */
+        .cart{
         display: flex;
         justify-content: space-between;
 
     }
-    .slick-container .p-price .cart .add{
+    /* .slick-container .p-price .cart .add{ */
+        .cart .add{
         display: flex;
         gap:4px;
         input{
@@ -407,6 +458,28 @@ height: calc(100vh - 329px);
 
     /* Sixth Page  */
 
+    /* Brands Carousel */
+
+    .brand{
+        width: 100%;
+        flex-grow: 1;
+        height: 150px;
+        display: flex;
+        border-radius: 5%;
+        border: 2px solid var(--bg-navigator);
+        
+    }
+    .slick .slick-items{
+        display: flex;
+        gap:10px;
+        width:100%;
+    }
+    .brand img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
 
     /* Seventh Page  */
 
@@ -425,19 +498,21 @@ height: calc(100vh - 329px);
         text-align: center;
         color: rgb(192 192 192);
         font-size: larger;
-        margin: 30px 0px 80px 0px;
+        margin: 30px 0px 60px 0px;
     }
 
 /* Slick-Items */
 
 .slick .slick-items .two{
-    border: 2px solid black;
-    width: 140px;
+    height: 100%;
+    width: 100%;
     flex-grow:1;
 }
 .slick .slick-items .two img{
    object-fit: cover;
-    /* width: 140px; */
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
  
 }
 /* Eight PAGE  */
@@ -452,13 +527,11 @@ height: calc(100vh - 329px);
     border: 1px solid var(--bg-navigator);
     height: 270px;
     width: 100%;
-    object-fit: contain; 
     flex-grow:1;
 }
 .slick .slick-items .three .slick-image img{
     height: 100%;
     width: 100%;
-    object-fit: contain; 
 
 }
 .slick .slick-items .three .slick-text{
@@ -511,12 +584,12 @@ height: calc(100vh - 329px);
  margin: 0px;
 }
 .slick .slick-items .five{
-    border: 2px solid black;
     width: 100%;
-    height: 270px;
+    height: 180px;
     background-color: white;
     flex-grow:1;
     display: flex;
+    border-radius: 5%;
 }
 .slick .slick-items .five p{
    padding:6px;
