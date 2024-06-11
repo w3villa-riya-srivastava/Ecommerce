@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -104,20 +103,21 @@
             </div>
         </div>
 
-
-
         <div class="bottom-head">
             <div class="wrapper">
-
                 <div class="allbottomHead">
                     <div class="div-setbetween">
                         <div class="bg-secondary">
+                            <span id="department"></span>
                             <i class="fa fa-bars icon-gap"></i> ALL DEPARTMENTS
+                            
                         </div>
                         <div class="menu-items">
                             <ul>
                                 <li>MULTILEVEL</li>
-                                <li>MEGA MENU</li>
+                                <li style="position: relative;">MEGA MENU
+                                    <span id="new"></span>
+                                </li>
                                 <li>FULLWIDTH</li>
                             </ul>
                         </div>
@@ -142,15 +142,19 @@
         <div class="wrapper">
             <div class="carousel-part">
                 <div class="left-carousel">
-
-                    <img src="./images/phone.png" alt="">
+                    <div class="left-carousel-image"> <img src="./images/phone.png" alt=""></div>
+                    <div class="wrap-text">
+                        <h4>MOBILE</h4>
+                        <p>Best mobile options at any resolution</p>
+                        <button>LEARN MORE</button>
+                    </div>
                 </div>
                 <div class="right">
-                    <div class="right-up">
-                        <img src="./images/watch.png" alt="">
+                    <div class="right-image">
+                        <div class="watch"><img src="./images/pic2.png" alt=""></div>
                     </div>
-                    <div class="right-bottom">
-                        <img src="./images/watch.png" alt="">
+                    <div class="right-image">
+                        <div class="watch"><img src="./images/pic2.png" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -214,12 +218,18 @@
                 </div>
 
                 <div class="slick">
-                       <div class="slick-items slider">
-                        <div class="one"><img src="./images/fashion.jpeg" alt=""></div>
-                        <div class="one"><img src="./images/homedecor.jpeg" alt=""></div>
-                        <div class="one"><img src="./images/footwear.jpeg" alt=""></div>
-                        <div class="one"><img src="./images/bags.jpeg" alt=""></div>
-                        <div class="one"><img src="./images/beauty.jpeg" alt=""></div>
+                       <div class="slick-items slider" style="position: relative;">
+                        <div class="one" style="position: relative;"><img src="./images/fashion.jpeg" alt="">
+                      <span class="slick-tag"><h3>FASHION</h3></span>
+                        </div>
+                        <div class="one"><img src="./images/homedecor.jpeg" alt="">
+                            <span class="slick-tag"><h3>FASHION</h3></span></div>
+                        <div class="one"><img src="./images/footwear.jpeg" alt="">
+                            <span class="slick-tag"><h3>FASHION</h3></span></div>
+                        <div class="one"><img src="./images/bags.jpeg" alt="">
+                            <span class="slick-tag"><h3>FASHION</h3></span></div>
+                        <div class="one"><img src="./images/beauty.jpeg" alt="">
+                         <span class="slick-tag"><h3>FASHION</h3></span></div>
                     </div>
 
                 </div>
@@ -248,7 +258,10 @@
                     <div class="slick-items slider">
                         <div class="slick-container">
 
-                            <div class="one"><img src="./images/fashion.jpeg" alt=""></div>
+                            <div class="one">
+                                <span id="labels"></span>
+                                <span id="hot"></span>
+                                <img src="./images/fashion.jpeg" alt=""></div>
 
                             <div class="p-name">
                                 <p style="text-decoration: underline;">XYZ</p>
@@ -281,7 +294,10 @@
                         </div>
 
                         <div class="slick-container">
-                            <div class="one"><img src="./images/homedecor.jpeg" alt=""></div>
+                            <div class="one">
+                                <span id="labels"></span>
+                                <span id="hot"></span>
+                                <img src="./images/homedecor.jpeg" alt=""></div>
 
                             <div class="p-name">
                                 <p style="text-decoration: underline;">XYZ</p>
@@ -313,40 +329,10 @@
 
                         </div>
                         <div class="slick-container">
-                            <div class="one"><img src="./images/footwear.jpeg" alt="">
-
-                            </div>
-
-                            <div class="p-name">
-                                <p style="text-decoration: underline;">XYZ</p>
-                                <p>BRAND</p>
-                            </div>
-
-                            <div class="p-price">
-                                <h3>Headphones</h3>
-                                <p>$999.00 <del style="font-size: small;">$3,299.00</del></p>
-                                <div class="cart" style="display: flex;">
-                                    <div class="add">
-                                        <input type="number" placeholder="1">
-                                        <button>ADD TO CART</button>
-                                    </div>
-                                    <div class="wishlist" style="display: flex;">
-                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
-                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="p-buy">
-                                <div class="buy-now"><i style="color: green;" class="fa fa-money icon-gap"></i>Buy Now
-                                </div>
-                                <div class="ques"><i style="color: red;"
-                                        class="fa fa-question-circle-o icon-gap"></i>Question</div>
-                            </div>
-                        </div>
-                        <div class="slick-container">
-                            <div class="one"><img src="./images/bags.jpeg" alt="">
+                            <div class="one">
+                                <span id="labels"></span>
+                                <span id="hot"></span>
+                                <img src="./images/footwear.jpeg" alt="">
 
                             </div>
 
@@ -379,7 +365,46 @@
                             </div>
                         </div>
                         <div class="slick-container">
-                            <div class="one"><img src="./images/beauty.jpeg" alt=""></div>
+                            <div class="one">
+                                <span id="labels"></span>
+                                <span id="hot"></span>
+                                <img src="./images/bags.jpeg" alt="">
+
+                            </div>
+
+                            <div class="p-name">
+                                <p style="text-decoration: underline;">XYZ</p>
+                                <p>BRAND</p>
+                            </div>
+
+                            <div class="p-price">
+                                <h3>Headphones</h3>
+                                <p>$999.00 <del style="font-size: small;">$3,299.00</del></p>
+                                <div class="cart" style="display: flex;">
+                                    <div class="add">
+                                        <input type="number" placeholder="1">
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                    <div class="wishlist" style="display: flex;">
+                                        <a href=""><i class="fa fa-heart icon-gap-2"></i></a>
+                                        <a href=""><i class="fa fa-cart-arrow-down"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="p-buy">
+                                <div class="buy-now"><i style="color: green;" class="fa fa-money icon-gap"></i>Buy Now
+                                </div>
+                                <div class="ques"><i style="color: red;"
+                                        class="fa fa-question-circle-o icon-gap"></i>Question</div>
+                            </div>
+                        </div>
+                        <div class="slick-container">
+                            <div class="one">
+                                  <span id="labels"></span>
+                                   <span id="hot"></span>
+                                  <img src="./images/beauty.jpeg" alt=""></div>
 
                             <div class="p-name">
                                 <p style="text-decoration: underline;">XYZ</p>
@@ -445,7 +470,7 @@
                                 <li>See all in Fashion</li>
                             </ul>
                         </div>
-
+                     
                         <div class="fashion-items slider">
                          
                             <div class="one-3">
@@ -546,6 +571,7 @@
                                 </div>
                             </div>
                         </div>
+                         </div>
                     </div>
                 </div>
 

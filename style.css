@@ -51,7 +51,7 @@
     text-align: center;
     color: rgb(88, 86, 86);
     font-size: larger;
-    margin: 30px 0px 80px 0px;
+    margin: 30px 0px 60px 0px;
 }
 .ecom-heading p a{
     color: blue;
@@ -63,7 +63,7 @@
 .slick{
     display: flex;
     width: auto;
-    margin:60px 0px;
+    margin:30px 0px;
 
 }
 .slick .slick-items{
@@ -74,14 +74,16 @@
 }
 .slick .slick-items .one{
     width: 100%;
-    /* margin-inline: 20px; */
     flex-grow:1;
     height: 270px;
+    position: relative;
+    overflow: hidden;
 }
 .slick .slick-items .one img{
    width: 100%;
     height: 100%;
     border-radius: 5%;
+
  
 }
 /* Slider CSS CHanges*/
@@ -145,7 +147,7 @@
     align-items: center;
 }
 .allmidHead .div-setbetween{
-padding: 12px 0px;
+padding: 22px 0px;
 display: flex;
 align-items: center;
 }
@@ -193,6 +195,17 @@ padding: 12px 0px;
 display: flex;
 align-items: center;
 }
+#department:after{
+    content: "Sale";
+    padding: 4px;
+    font-size: small;
+    width: fit-content;
+    background-color: var(--use-orange);
+    color: white;
+    position: absolute;
+    top: -12px;
+    right: 9px;
+}
 .allbottomHead .div-setbetween ul{
 text-align: center;
 }
@@ -205,12 +218,25 @@ margin-inline: 6px;
 cursor: pointer;
 color: blue;
 }
+#new:after{
+    content: "New";
+    padding: 4px;
+    font-size: small;
+    width: fit-content;
+    background-color: var(--bg-secondary);
+    color: black;
+    position: absolute;
+    top: -30px;
+    right: -9px;
+}
 .bg-secondary{
     background-color: var(--bg-secondary);
     height: 54px;
     display: flex;
     align-items: center;
     padding: 0px 10px;
+    position: relative;
+    
 }
 
 /* Hero Section  */
@@ -219,6 +245,7 @@ height: calc(100vh - 329px);
    padding: 30px 0px;
    display: flex;
    gap: 30px;
+   position: relative;
 }
 .left-carousel{
     width: 65%;
@@ -228,10 +255,40 @@ height: calc(100vh - 329px);
     position: relative;
     
 }
+.left-carousel .wrap-text{
+    padding: 0px 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* For vertical center  */
+    justify-content: center;
+    position: absolute;
+}
+.left-carousel .wrap-text h4{
+    background-color: var(--bg-primary);
+    color: white;
+    border-radius: 5%;
+    width: 60px;
+    padding: 10px;
+}
+.left-carousel .wrap-text p{
+    width: 432px;
+    font-weight: bold;
+    font-size: xxx-large;
+    padding:20px 0px;
+}
+.left-carousel .wrap-text button{
+    cursor: pointer;
+    padding:10px;
+    border: 2px solid grey;
+    border-radius: 5%;
+    width: fit-content;
+}
 .carousel-part img{
    float: right;
    width: 100%;
    height: 100%;
+   position: absolute;
 
 }
 .right{
@@ -239,23 +296,26 @@ height: calc(100vh - 329px);
     display: flex;
     flex-direction: column;
     gap:30px;
-    
+    position: relative;
 }
-.right-up{
+.right-image{
     height: 50%;
     border: 2px solid var(--bg-navigator);
     background-color: var(--bg-navigator);
     border-radius: 5%;
-    object-fit: cover;
 
 }
-.right-bottom{
-    height: 50%;
-    border-radius: 5%;
-    border: 2px solid var(--bg-navigator);
-    background-color: var(--bg-navigator);
+.right-image .watch{
+    height: 100%;
     object-fit: cover;
+    width:100%;
+    position: absolute; 
 }
+.right-image .watch img{
+    object-fit: contain;
+    height: 240px;
+}
+
 
 /* DIVIDER */
 
@@ -306,68 +366,18 @@ height: calc(100vh - 329px);
     color: white;
     background-color: var(--bg-primary);
 } 
+.slick-tag h3{
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: fit-content;
+    padding: 12px;
+    bottom: 10px;
+    border-radius: 10%;
+    right: 130px;
+}
+/* sixth page  */
 /* Third Page Carousel */
-.slick .fashion-slick{
-    display: flex;
-    gap:10px;
-    width:100%;
-    height: 420px;
-}
-.fashion-left{
-    height: 100%;
-    width: 20%;
-    background-color: var(--bg-navigator);
-    .fashion-image{
-        margin: 20px;
-    }
-}
-.f-heading{
-    padding: 10px 10px 0px 10px;
-    hr{
-        margin: 10px 0px;
-        border: 1px solid #f05f1f;
-    width: 80px;
-    /* margin: auto; */
-}
-    }
-.fashion-image img{
-        height: 100%;
-        width: 100%;
-}
-.fashion-left ul{
-    padding: 0px 10px;
-    li{
-        color: blue;
-
-    }
-}
-.fashion-items{
-    display: flex;
-    height: 100%;
-    width: 80%;
-    gap:10px;
-}
-.one-3{
-    /* height: 260px;
-    width: 100%; */
-    padding:10px;
-    margin:10px;
-}
-.one-3 .img{
-    padding:10px;
-    height:270px;
-    img{
-        height: 100%;
-    width: 100%;
-    object-fit: cover;
-    }
-}
-.one-3 h3{
-    padding:10px;
-}
-.one-3 p{
-    padding: 0px 10px;
-}
 
 
 /* Fourth Page  */
@@ -382,12 +392,41 @@ height: calc(100vh - 329px);
         width:100%;
     
     }
+
+    #labels:after{
+      content: "CUSTOMS LABELS";
+    padding: 4px;
+    font-size: small;
+    width: fit-content;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 32px;
+    left: -34px;
+    transform: rotate(-45deg);
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    }
+
+#hot:after{
+    content: "Hot";
+    font-weight: bold;
+    padding: 6px 10px;
+    font-size: medium;
+    width: fit-content;
+    background-color: var(--bg-secondary);
+    color: black;
+    position: absolute;
+    top: 18px;
+    right: 19px;
+    border-radius: 10%;
+}
     .slick-container .p-name{
         display: flex;
         justify-content: space-between;
         background-color: rgb(220,220,220);
         p{
-            color: darkgray;
             font-size: large;
             padding: 14px;
         }
@@ -436,7 +475,7 @@ height: calc(100vh - 329px);
     
     .see-products{
         text-align: center;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
     .see-products .in-button{
         font-size: larger;
@@ -452,6 +491,67 @@ height: calc(100vh - 329px);
     } */
 
     /* Fifth Page  */
+
+    .slick .fashion-slick{
+        display: flex;
+        gap:10px;
+        width:100%;
+        height: 420px;
+    }
+    .fashion-left{
+        height: 100%;
+        width: 20%;
+        background-color: var(--bg-navigator);
+        .fashion-image{
+            margin: 20px;
+        }
+    }
+    .f-heading{
+        padding: 10px 10px 0px 10px;
+        hr{
+            margin: 10px 0px;
+            border: 1px solid #f05f1f;
+        width: 80px;
+        /* margin: auto; */
+    }
+        }
+    .fashion-image img{
+            height: 100%;
+            width: 100%;
+    }
+    .fashion-left ul{
+        padding: 0px 10px;
+        li{
+            color: blue;
+    
+        }
+    }
+    .fashion-items{
+        display: flex;
+        height: 100%;
+        width: 80%;
+        gap:10px;
+    }
+    .one-3{
+        padding:10px;
+        margin:10px;
+    }
+    .one-3 .img{
+        padding:10px;
+        height:270px;
+        img{
+            height: 100%;
+        width: 100%;
+        object-fit: cover;
+        }
+    }
+    .one-3 h3{
+        padding:10px;
+    }
+    .one-3 p{
+        padding: 0px 10px;
+    }
+    
 
     /* SLICK-ITEMS Defined above  */
     
@@ -585,7 +685,6 @@ height: calc(100vh - 329px);
 }
 .slick .slick-items .five{
     width: 100%;
-    height: 180px;
     background-color: white;
     flex-grow:1;
     display: flex;
