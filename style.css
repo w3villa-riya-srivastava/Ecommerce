@@ -679,6 +679,7 @@ height: calc(100vh - 329px);
 .divider-3 hr{
  border: 1px solid #f05f1f;; 
  width: 128px;
+ margin: 4px 0px;
 }
 .slick .slick-items{
  margin: 0px;
