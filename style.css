@@ -109,7 +109,9 @@
    display: inline-block;
    margin-inline: 6px;
 }
-
+.alltopHead .div-setbetween ul li a{
+   text-decoration: none;
+ }
 .alltopHead .div-setbetween ul li a:hover{
     cursor: pointer;
     color: blue;
@@ -153,17 +155,21 @@ align-items: center;
 }
 .allmidHead .div-setbetween ul{
 text-align: center;
-/* color: black; */
 }
 .allmidHead .div-setbetween ul li{
 display: inline-block;
 margin-inline: 6px;
+text-decoration: none;
 }
-
-.allmidHead .div-setbetween ul li a:hover{
+.allmidHead .div-setbetween ul li a .nav-button{
+   cursor: pointer;
+ text-decoration: none;
+}
+/* .allmidHead .div-setbetween ul li a:hover{
 cursor: pointer;
 color: blue;
-}
+background-color: red;
+} */
 .mid-head .wrapper .allmidHead .div-setbetween .bg-primary{
     padding:6px;
     i{
@@ -288,6 +294,7 @@ height: calc(100vh - 329px);
    float: right;
    width: 100%;
    height: 100%;
+   object-fit: cover;
    position: absolute;
 
 }
@@ -312,7 +319,7 @@ height: calc(100vh - 329px);
     position: absolute; 
 }
 .right-image .watch img{
-    object-fit: contain;
+    object-fit: cover;
     height: 240px;
 }
 
