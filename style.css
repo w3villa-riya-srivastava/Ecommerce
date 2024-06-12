@@ -11,6 +11,95 @@
     max-width: 1398px;
     margin: auto;
 }
+/* 1st Breakpoint  */
+
+@media screen and (max-width: 1530px){
+    .wrapper{
+        max-width: 1100px;
+    }
+    .third-page .slick-tag{
+        display: none;
+    }
+    .cart .add button{
+        display: none;
+    }
+    .cart .wishlist a{
+        display: none;
+    }
+    .one-3 .cart{
+        display: none;
+    }
+    /* Divider  */
+    .divider-1 .d1-items .d1-text .text-hide{
+        display: none;
+    }
+    .divider-3 .slick .slick-divider-items .five .price-tag .icon-hide{
+        display: none;
+    } 
+
+}
+
+/* 2nd Breakpoint  */
+
+@media screen and (max-width: 1199px){
+    .wrapper{
+        max-width: 820px;
+    }
+    .divider-1 {
+        gap: 40px;
+    }
+    .divider-1 .d1-items .d1-text {
+        display:none;
+    }
+
+    /* Navigation  */
+
+    .text-hide{
+        display: none;
+    }
+    .allmidHead .div-setbetween ul li .text-hide{
+        display: none;
+    }
+    .zero-item{
+        display: none;
+    }
+
+    /* Footer  */
+
+    .about-us .your-email {
+        flex-direction: column;
+    }
+
+}
+
+/* 3rd Breakpoint  */
+@media screen and (max-width: 928px){
+    .wrapper{
+        max-width: 500px;
+    }
+
+    /* Top Head  */
+
+    .alltopHead .div-setbetween:first-child ul, .div-setbetween:last-child ul{
+        display: none;
+    }
+    .div-setbetween .hamburger{
+        display: block;
+    }
+    .div-setbetween ul li a .hamburger{
+        display: block;
+    }
+
+    /* mid head  */
+
+    .allmidHead .div-setbetween .search-bar{
+        display: none;
+    }
+    .allmidHead .div-setbetween ul{
+        display: none;
+    }
+}
+
 :root{
     --bg-primary: rgb(38, 81, 214);
     --bg-secondary: rgb(253, 211, 47);
@@ -19,7 +108,7 @@
 }
 .bg-primary{
     background-color: var(--bg-primary);
-    border: none;
+    bord    er: none;
 }
 .bg-navigator{
     background-color: var(--bg-navigator);
@@ -33,6 +122,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+/* Hamburger  */
+
+.hamburger{
+    display: none;
 }
 
 /* Common Ecom-Heading */
@@ -111,6 +205,8 @@
 }
 .alltopHead .div-setbetween ul li a{
    text-decoration: none;
+   display: flex;
+   align-items: center;
  }
 .alltopHead .div-setbetween ul li a:hover{
     cursor: pointer;
@@ -161,10 +257,10 @@ display: inline-block;
 margin-inline: 6px;
 text-decoration: none;
 }
-.allmidHead .div-setbetween ul li a .nav-button{
+/* .allmidHead .div-setbetween ul li a .nav-button{
    cursor: pointer;
  text-decoration: none;
-}
+} */
 /* .allmidHead .div-setbetween ul li a:hover{
 cursor: pointer;
 color: blue;
@@ -184,6 +280,8 @@ background-color: red;
  .allbottomHead .div-setbetween .menu-items{
     padding: 12px;
     color: white;
+    display: flex;
+    align-items: center;
 
 }
 .allbottomHead .div-setbetween .menu-items ul li{
@@ -248,6 +346,7 @@ color: blue;
 /* Hero Section  */
 .carousel-part{
 height: calc(100vh - 329px);
+min-height: 500px;
    padding: 30px 0px;
    display: flex;
    gap: 30px;
@@ -471,6 +570,10 @@ height: calc(100vh - 329px);
             width: 100%;
         }
     }
+    .cart .hamburger-cart{
+        background-color: var(--bg-primary);
+        padding: 6px;
+    }
 
     .slick-container .p-buy{
         display: flex;
@@ -575,11 +678,6 @@ height: calc(100vh - 329px);
         border-radius: 5%;
         border: 2px solid var(--bg-navigator);
         
-    }
-    .slick .slick-items{
-        display: flex;
-        gap:10px;
-        width:100%;
     }
     .brand img{
         object-fit: cover;
@@ -688,17 +786,19 @@ height: calc(100vh - 329px);
  width: 128px;
  margin: 4px 0px;
 }
-.slick .slick-items{
- margin: 0px;
-}
-.slick .slick-items .five{
+.slick .slick-divider-items{
+    display: flex;
     width: 100%;
+    gap:10px;
+    overflow: scroll;
+}
+.slick .slick-divider-items .five{
     background-color: white;
     flex-grow:1;
     display: flex;
     border-radius: 5%;
 }
-.slick .slick-items .five p{
+.slick .slick-divider-items .five p{
    padding:6px;
 }
 .icon-gap-2{
