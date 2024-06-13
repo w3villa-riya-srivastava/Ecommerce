@@ -6,7 +6,7 @@ $('.slider').slick({
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -15,7 +15,7 @@ $('.slider').slick({
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 928,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -23,7 +23,7 @@ $('.slider').slick({
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -46,7 +46,7 @@ $('.brand-slide').slick({
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -55,7 +55,7 @@ $('.brand-slide').slick({
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 928,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -63,7 +63,7 @@ $('.brand-slide').slick({
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

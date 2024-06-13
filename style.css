@@ -30,9 +30,9 @@
         display: none;
     }
     /* Divider  */
-    .divider-1 .d1-items .d1-text .text-hide{
+    /* .divider-1 .d1-items .d1-text .text-hide{
         display: none;
-    }
+    } */
     .divider-3 .slick .slick-divider-items .five .price-tag .icon-hide{
         display: none;
     } 
@@ -48,9 +48,9 @@
     .divider-1 {
         gap: 40px;
     }
-    .divider-1 .d1-items .d1-text {
+    /* .divider-1 .d1-items .d1-text {
         display:none;
-    }
+    } */
 
     /* Navigation  */
 
@@ -83,13 +83,20 @@
     } 
 
     /* Footer  */
-    .footer-bottom .payment .pay-images{
+    /* .footer-bottom .payment .pay-images{
         overflow: scroll;
-    }
+    } */
 
     .about-us .your-email {
         flex-direction: column;
     }
+
+    .footer-bottom .copyright{
+        display: none;
+    }
+    /* .footer-bottom .hamburger{
+        display: block;
+    } */
 
 
 
@@ -122,6 +129,45 @@
         display: none;
     }
 
+    /* Hero Section  */
+
+    .carousel-part{
+        flex-direction: column;
+    }
+    .carousel-part .right{
+        display: none;
+    }
+    .carousel-part .left-carousel{
+        width: 100%;
+    }
+    .carousel-part .left-carousel .wrap-text p{
+        display: none;
+    }
+
+     /* Third page  */
+     
+     /* .third-page .items .categories-items:{
+
+     } */
+
+     /* Fourth Page  */
+     .slick-container .p-buy .buy-now .content-hide{
+        display: none;
+
+     }
+     .slick-container .p-buy .ques .content-hide{
+        display: none;
+
+     }
+
+     /* Fourth Breakpoint -- Mobile Responsive   */
+
+     /* @media screen and (max-width: 576px){
+    
+
+     }
+     */
+
     
 
 
@@ -137,7 +183,7 @@
 }
 .bg-primary{
     background-color: var(--bg-primary);
-    bord    er: none;
+    border: none;
 }
 .bg-navigator{
     background-color: var(--bg-navigator);
@@ -191,7 +237,7 @@
 }
 .slick .slick-items{
     display: flex;
-    gap:10px;
+    gap:12px;
     width:100%;
 
 }
@@ -364,7 +410,7 @@ color: blue;
 }
 .bg-secondary{
     background-color: var(--bg-secondary);
-    height: 54px;
+    height: 54px;`
     display: flex;
     align-items: center;
     padding: 0px 10px;
@@ -374,12 +420,13 @@ color: blue;
 
 /* Hero Section  */
 .carousel-part{
-height: calc(100vh - 329px);
-min-height: 500px;
+height: 600px;
+/* min-height: 500px; */
    padding: 30px 0px;
    display: flex;
    gap: 30px;
    position: relative;
+   max-width: 100%;
 }
 .left-carousel{
     width: 65%;
@@ -612,6 +659,10 @@ min-height: 500px;
         padding: 10px;
 
     }
+    .slick-container .p-buy .buy-now, .ques{
+        display: flex;
+        align-items: center;
+    }
     
     .see-products{
         text-align: center;
@@ -756,7 +807,7 @@ min-height: 500px;
 .slick .slick-items .three{
     width: 456px;
     flex-grow:1;
-    border: 1px solid var(--bg-navigator);
+    /* border: 1px solid var(--bg-navigator); */
     border-radius: 5%;
 }
 .slick .slick-items .three .slick-image{
@@ -786,7 +837,6 @@ min-height: 500px;
 /* NINTH PAGE  */
 
 .slick .slick-items .four{
-    /* border: 2px solid black; */
     width: 456px;
     flex-grow:1;
 }
@@ -821,7 +871,7 @@ min-height: 500px;
     display: flex;
     width: 100%;
     gap:10px;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 .slick .slick-divider-items .five{
     background-color: white;
