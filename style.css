@@ -64,17 +64,34 @@
         display: none;
     }
 
-    /* Seventh Page  */
+    /* Seventh Page -- No */
 
-    .seventh-page .wrapper .sick .slick-items .two{
+    .seventh-page .wrapper .slick .slick-items .two{
       overflow: scroll;  
+    }
+    
+    /* EIght Page  */
+
+    .eight-page .slick.slick-items .three .slick-text .text-hide{
+        display: none;
+    } 
+
+    /* NInth PAge  */
+
+    .ninth-page .slick .slick-items .four .text-hide{
+        display: none;
     } 
 
     /* Footer  */
+    .footer-bottom .payment .pay-images{
+        overflow: scroll;
+    }
 
     .about-us .your-email {
         flex-direction: column;
     }
+
+
 
 }
 
@@ -104,6 +121,12 @@
     .allmidHead .div-setbetween ul{
         display: none;
     }
+
+    
+
+
+
+
 }
 
 :root{
@@ -719,6 +742,7 @@ min-height: 500px;
     height: 100%;
     width: 100%;
     flex-grow:1;
+
 }
 .slick .slick-items .two img{
    object-fit: cover;
