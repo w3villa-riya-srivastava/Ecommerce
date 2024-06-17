@@ -165,14 +165,13 @@
 
     <!-- HERO SECTION  -->
 
-    <section>
+    <section class="hero-section">
         <div class="wrapper">
             <div class="carousel-part">
                 <div class="left-carousel hero-slide">
-                    <div class="left-carousel-image"> <img src="./images/phone.png" alt=""></div>
-                    <div class="left-carousel-image"> <img src="https://images.pexels.com/photos/5208870/pexels-photo-5208870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
-                    <div class="left-carousel-image"> <img src="https://images.pexels.com/photos/7190924/pexels-photo-7190924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
-                    <div class="left-carousel-image"> <img src="https://images.pexels.com/photos/2265484/pexels-photo-2265484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                    <div class="left-carousel-image"><img src="https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="object-position: right;"></div>
+                    <div class="left-carousel-image"><img src="https://images.pexels.com/photos/1109543/pexels-photo-1109543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                    <div class="left-carousel-image"><img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
                   
                 </div>
                 <div class="wrap-text">
@@ -194,7 +193,7 @@
     </section>
 
     <!-- DIVIDER -->
-    <section style=" background-color: rgb(105, 105, 105);">
+    <section class="hero-divider" style=" background-color: rgb(105, 105, 105);">
         <div class="wrapper">
             <div class="divider-1">
                 <div class="d1-items">
@@ -540,7 +539,7 @@
                             </ul>
                         </div>
 
-                        <div class="fashion-items slider">
+                        <div class="fashion-items fashion-slider">
 
                             <div class="one-3">
                                 <div class="img"><img src="./images/fashion.jpeg" alt=""></div>
@@ -799,7 +798,7 @@
 
     <!-- DIVIDER-3 -->
 
-    <section style=" background-color: rgb(105, 105, 105);">
+    <section class="adidas-divider" style=" background-color: rgb(105, 105, 105);">
         <div class="wrapper">
             <div class="divider-3">
                 <div class="ecom-heading-1">
@@ -954,33 +953,6 @@
     </section>
     <!-- SLICK SLIDER JS  -->
     <script type="text/javascript" src="main.js">
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
     </script>
 
 </body>
