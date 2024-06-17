@@ -2,7 +2,9 @@ $('.slider').slick({
     dots: true,
     infinite: true, //if TRUE slides will keep moving and will return to first slide otheriwse it will not move after showing all slides
     speed: 300,
-    slidesToShow: 4, 
+    slidesToShow: 4,
+    autoplay: true,
+    autoplaySpeed: 800,  
     slidesToScroll: 1,
     responsive: [
       {
@@ -43,6 +45,8 @@ $('.brand-slide').slick({
     infinite: true, //if TRUE slides will keep moving and will return to first slide otheriwse it will not move after showing all slides
     speed: 300,
     slidesToShow: 9, 
+    autoplay: true,
+    autoplaySpeed: 800, 
     slidesToScroll: 3,
     responsive: [
       {
@@ -85,10 +89,12 @@ $('.brand-slide').slick({
 
   // LEFT-CAROUSEL SLIDE 
 
-  $('.one-slide').slick({
+  $('.hero-slide').slick({
     dots: true,
     infinite: true, //if TRUE slides will keep moving and will return to first slide otheriwse it will not move after showing all slides
     speed: 300,
+    autoplay: true,
+    autoplaySpeed: 800, 
     slidesToShow: 1, 
     slidesToScroll: 1,
     responsive: [

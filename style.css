@@ -66,9 +66,15 @@
 
     /* Seventh Page -- No */
 
-    /* .seventh-page .wrapper .slick .slick-items .two{
-      overflow: scroll;  
-    } */
+    .seventh-page .wrapper .slick .slick-items .two{
+        width:30%;
+   
+    }
+    .seventh-page .wrapper .slick .slick-items{
+        flex-wrap: wrap;
+    }
+
+
     
     /* EIght Page  */
 
@@ -439,35 +445,48 @@ color: blue;
 .left-carousel{
     height: 100%;
     width: 65%;
-    border: 2px solid var(--bg-navigator);
-    background-color: var(--bg-navigator);
-    border-radius: 5%;
     position: relative;
     
 }
-.left-carousel .wrap-text{
-    padding: 0px 50px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    /* For vertical center  */
-    justify-content: center;
-    position: absolute;
+/* .left-carousel .slick-list .slick-track .slick-slide{
+    position: relative !important;
+} */
+.left-carousel .left-carousel-image img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+     border: 2px solid var(--bg-navigator);
+    border-radius: 5%;
+    
 }
-.left-carousel .wrap-text h4{
+.left-carousel-image{
+    position: relative;
+
+}
+
+.carousel-part  .wrap-text{
+    top: 186px;
+    left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+
+.carousel-part .wrap-text h4{
     background-color: var(--bg-primary);
     color: white;
     border-radius: 5%;
     width: 60px;
     padding: 10px;
 }
-.left-carousel .wrap-text p{
+.carousel-part .wrap-text p{
     width: 432px;
     font-weight: bold;
     font-size: xxx-large;
     padding:20px 0px;
 }
-.left-carousel .wrap-text button{
+.carousel-part .wrap-text button{
     cursor: pointer;
     padding:10px;
     border: 2px solid grey;
@@ -475,11 +494,10 @@ color: blue;
     width: fit-content;
 }
 .carousel-part img{
-   /* float: right; */
    width: 100%;
    height: 100%;
-   object-fit: contain;
-   position: absolute;
+   object-fit: contain; 
+   /* position: absolute; */
 
 }
 .right{
@@ -801,7 +819,6 @@ color: blue;
 
 .slick .slick-items .two{
     flex-grow:1;
-    aspect-ratio: 1;
 
 }
 .slick .slick-items .two img{
@@ -993,3 +1010,5 @@ justify-content: right;
     height: 28px;
     display: flex;
 }
+
+

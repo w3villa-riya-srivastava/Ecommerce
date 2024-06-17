@@ -168,14 +168,19 @@
     <section>
         <div class="wrapper">
             <div class="carousel-part">
-                <div class="left-carousel">
+                <div class="left-carousel hero-slide">
                     <div class="left-carousel-image"> <img src="./images/phone.png" alt=""></div>
-                    <div class="wrap-text">
-                        <h4>MOBILE</h4>
-                        <p>Best mobile options at any resolution</p>
-                        <button>LEARN MORE</button>
-                    </div>
+                    <div class="left-carousel-image"> <img src="https://images.pexels.com/photos/5208870/pexels-photo-5208870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                    <div class="left-carousel-image"> <img src="https://images.pexels.com/photos/7190924/pexels-photo-7190924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                    <div class="left-carousel-image"> <img src="https://images.pexels.com/photos/2265484/pexels-photo-2265484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                  
                 </div>
+                <div class="wrap-text">
+                    <h4>MOBILE</h4>
+                    <p>Best mobile options at any resolution</p>
+                    <button>LEARN MORE</button>
+                </div>
+                
                 <div class="right">
                     <div class="right-image">
                         <div class="watch"><img src="./images/pic2.png" alt=""></div>
@@ -948,7 +953,36 @@
         </div>
     </section>
     <!-- SLICK SLIDER JS  -->
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="main.js">
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+    </script>
+
 </body>
 
 </html>
