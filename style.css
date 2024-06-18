@@ -24,21 +24,16 @@
   .hero-section .wrapper .carousel-part .wrap-text p {
     width: 430px;
 }  
-.third-page .slick-tag {
-    display: none;
-  }
   .cart .add button {
-    display: none;
+    font-size: x-small;
   }
-  .cart .wishlist a {
+  /* .cart .wishlist a {
+    justify-content: center;
+  } */
+  /* .one-3 .cart {
     display: none;
-  }
-  .one-3 .cart {
-    display: none;
-  }
-  /* .seventh-page .wrapper .slick .slick-items{
-        flex-wrap: wrap;
-    } */
+  } */
+
 /* Fifth PAge  */
 
 .fifth-page .slick .fashion-slick .fashion-left{
@@ -108,6 +103,7 @@
   }
   .seventh-page .wrapper .slick .slick-items {
     flex-wrap: wrap;
+    gap: 30px;
   }
 
   /* EIght Page  */
@@ -129,21 +125,25 @@
     gap: 20px;
   }
 
-  /* Footer  */
-  /* .footer-bottom .payment .pay-images{
-        overflow: scroll;
-    } */
-
   .about-us .your-email {
     flex-direction: column;
   }
-
-  .footer-bottom .copyright {
-    display: none;
+  .footer-bottom{
+    width: 820px;
   }
-  /* .footer-bottom .hamburger{
-        display: block;
-    } */
+  .wrapper .footer-bottom .copyright {
+    font-size: medium;
+    width: 60%;
+}
+
+.wrapper .footer-bottom .payment {
+    width: 40%;
+}
+.wrapper .footer-head .about-us .your-email button {
+    padding: 4px;
+    margin-top: 10px;
+    font-size: small; 
+}
 }
 
 /* 3rd Breakpoint  */
@@ -195,14 +195,29 @@
     text-align: center;
     gap: 20px !important;
   }
-
+  .hero-divider .wrapper .divider-1 .d1-items .d1-text{ 
+    text-align: left;
+  }
   /* Third page  */
+.wrapper .items{
+    font-size: medium;
+}
+  .wrapper .third-page .slick{
+    justify-content: center;
+  }
+  .wrapper .third-page .slick .slick-items{
+    width: 400px;
+  }
 
-  /* .third-page .items .categories-items:{
-
-     } */
 
   /* Fourth Page  */
+  .wrapper .fourth-page .slick{
+    justify-content: center;
+  }
+  .wrapper .fourth-page .slick .slick-items{
+    width:400px;
+  }
+  
   .slick-container .p-buy .buy-now .content-hide {
     display: none;
   }
@@ -213,12 +228,16 @@
     /* Fifth PAge  */
 
 .fifth-page .slick .fashion-slick .fashion-left{
-    width:40%;
+    width:45%;
 
 }
 .fifth-page .slick .fashion-slick .fashion-items{
-    width:60%;
+    width:55%;
 
+}
+/* Sixth Page  */
+.wrapper .sixth-page .slick .slick-items .brand{
+    height: 210px;
 }
 
   /* Eight Page  */
@@ -228,19 +247,71 @@
   }
 
 /* NInth PAge  */
+.wrapper .ninth-page .slick .slick-items{
+    flex-direction: column;
+}
+/* Divider 3  */
   .adidas-divider .wrapper .divider-3 .slick{
+    width: 100%;
+    justify-content: center;
+  }
+  .adidas-divider .wrapper .divider-3 .slick .slick-divider-items{
     width: 300px;
     justify-content: center;
   }
 
-  /* Fourth Breakpoint -- Mobile Responsive   */
+  /* Footer Head  */
 
+  .wrapper .footer-head {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .wrapper .footer-head .about-us {
+    width: unset;
+  }
+  .wrapper .footer-head .about-us .your-email {
+    flex-direction: column;
+  }
+  .wrapper .footer-head .about-us .your-email .type input{
+    width: 250px;
+    height: 30px;
+  }
+
+  .footer-bottom{
+    width: 500px;
+    flex-direction: column;
+  }
+
+  .wrapper .footer-bottom .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper .footer-bottom .payment {
+    width: 100%;
+}
+.wrapper .footer-bottom .payment .pay-images {
+    justify-content: center;
+    padding-bottom: 10px;
+}
+}
+
+  /* Fourth Breakpoint -- Mobile Responsive   */
+ 
   @media screen and (max-width: 576px) {
-    .wrapper .footer-head {
-      flex-direction: column;
+    .wrapper {
+     max-width: 450px;   
+    }
+    .bottom-head .wrapper .allbottomHead .div-setbetween .menu-items ul .nav-hide{
+        display: none;
+    }
+    .wrapper .ecom-heading h1{
+        font-size: xx-large;
+    }
+    .seventh-page .wrapper .divider-2 h1{
+        font-size: xx-large;
     }
   }
-}
 
 :root {
   --bg-primary: rgb(38, 81, 214);
@@ -561,6 +632,7 @@
 }
 .divider-1 .d1-items {
   display: flex;
+  width: 265px;
   gap: 20px;
 }
 .divider-1 .d1-items .d1-logo i {
@@ -600,8 +672,6 @@
 .slick-tag h3 {
   position: absolute;
   background-color: white;
-  color: black;
-  width: fit-content;
   padding: 12px;
   bottom: 10px;
   border-radius: 10%;
@@ -697,6 +767,11 @@
   padding: 6px;
 }
 
+.cart .wishlist{
+    display: flex;
+    align-items: center;
+}
+
 .slick-container .p-buy {
   display: flex;
   justify-content: space-between;
@@ -759,6 +834,7 @@
     padding: 0px 0px 20px 20px;
   li {
     color: blue;
+    padding: 2px 0px;
   }
 }
 .fashion-items {
@@ -884,7 +960,7 @@
 }
 .slick .slick-items .four p {
   padding: 24px;
-  text-align: justify;
+  text-align: center;
 }
 
 /* DIVIDER-3  */
@@ -978,6 +1054,7 @@
 /* Newsletter */
 .about-us .stay {
   padding-left: 20px;
+  color: #696973;
   margin: 10px 0px;
   font-size: small;
 }
@@ -992,6 +1069,7 @@
 
 .about-us.your-email .type .input {
   padding: 0px;
+  width: 100%;
 }
 .about-us .your-email button {
   background-color: rgb(28, 63, 161);
@@ -1015,8 +1093,9 @@
   width: 50%;
 }
 .footer-bottom .payment .pay-images {
-  margin: 18px;
+  margin-top: 18px;
   justify-content: right;
   height: 28px;
   display: flex;
+  width: 100%;
 }

@@ -5,7 +5,7 @@ $('.slider').slick({
     slidesToShow: 4,
     autoplay: true,
     autoplaySpeed: 800,  
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     responsive: [
       {
         breakpoint: 1199,
@@ -117,7 +117,7 @@ $('.brand-slide').slick({
       {
         breakpoint: 928,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           arrows: false
         }
