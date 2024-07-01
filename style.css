@@ -1,7 +1,7 @@
 * {
   font-family: "Roboto", sans-serif;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   color: black;
   ul {
     list-style: none;
@@ -11,6 +11,7 @@
   max-width: 1398px;
   margin: auto;
 }
+
 /* 1st Breakpoint  */
 
 @media screen and (max-width: 1530px) {
@@ -27,11 +28,23 @@
   .cart .add button {
     font-size: x-small;
   }
-  /* .cart .wishlist a {
-    justify-content: center;
-  } */
-  /* .one-3 .cart {
-    display: none;
+
+  .wrapper .third-page .slick .slick-items .one .slick-tag h3 {
+    right: 75px;
+  }
+
+  /* Divider-3  */
+  .slick .slick-divider-items .five {
+    background-color: white;
+    display: flex;
+    border-radius: 5%;
+    width: 260px;
+  }
+  .slick .slick-divider-items .five .slick-image img{
+    width: 128px;
+  }
+  /* .slick .slick-divider-items .five .slick-image img{
+    width: 100%;
   } */
 
 /* Fifth PAge  */
@@ -125,6 +138,11 @@
     gap: 20px;
   }
 
+.slick .slick-divider-items .five .slick-image img {
+        width: 160px;
+    }
+
+
   .about-us .your-email {
     flex-direction: column;
   }
@@ -208,6 +226,9 @@
   .wrapper .third-page .slick .slick-items{
     width: 400px;
   }
+  .wrapper .third-page .slick .slick-items .one .slick-tag h3 {
+    right: 130px;
+  }
 
 
   /* Fourth Page  */
@@ -224,7 +245,6 @@
   .slick-container .p-buy .ques .content-hide {
     display: none;
   }
-
     /* Fifth PAge  */
 
 .fifth-page .slick .fashion-slick .fashion-left{
@@ -237,7 +257,7 @@
 }
 /* Sixth Page  */
 .wrapper .sixth-page .slick .slick-items .brand{
-    height: 210px;
+    height: 280px;
 }
 
   /* Eight Page  */
@@ -305,12 +325,28 @@
     .bottom-head .wrapper .allbottomHead .div-setbetween .menu-items ul .nav-hide{
         display: none;
     }
+    .hero-section .wrapper .carousel-part .wrap-text p {
+      width: 305px;
+  }
     .wrapper .ecom-heading h1{
         font-size: xx-large;
     }
     .seventh-page .wrapper .divider-2 h1{
         font-size: xx-large;
     }
+    .wrapper .circle-buttons ul {
+        gap: 10px;
+    }
+    .wrapper .items {
+      font-size: 14px;
+  }
+    .footer-bottom {
+      width: 100%;
+  }
+  .wrapper .footer-bottom .copyright {
+    font-size: smaller;
+}
+
   }
 
 :root {
